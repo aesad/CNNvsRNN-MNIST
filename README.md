@@ -83,7 +83,7 @@ Example output:
 ### 3.1 Visualization of CNN
 
 <p align="center">
-  <img src="./training_plot/CNN_training_plot.png" alt="CNN Training" width="100">
+  <img src="./training_plot/CNN_training_plot.png" alt="CNN Training" width="1000">
 </p>
 
 **Observation:**  
