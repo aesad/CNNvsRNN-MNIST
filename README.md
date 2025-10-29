@@ -179,7 +179,7 @@ Example output:
 
 ## 💡 5. Possible Improvements
 
-Regarding recurrent neural networks (RNNs), our study has been limited to conventional models. However, numerous advanced and contemporary RNN architectures have demonstrated strong performance in text processing tasks. Investigating their effectiveness in image processing is a promising area of study. For instance, the [**Recurrent Attention Unit (RAU)**](./[CNNvsRNN_MNIST.ipynb](https://www.sciencedirect.com/science/article/abs/pii/S0925231222013339)) enhances a Gated Recurrent Unit (GRU) cell by incorporating an attention gate, thereby seamlessly integrating the **attention mechanism** within the cell’s structure.
+Regarding recurrent neural networks (RNNs), our study has been limited to conventional models. However, numerous advanced and contemporary RNN architectures have demonstrated strong performance in text processing tasks. Investigating their effectiveness in image processing is a promising area of study. For instance, the [**Recurrent Attention Unit (RAU)**](https://www.sciencedirect.com/science/article/abs/pii/S0925231222013339) enhances a Gated Recurrent Unit (GRU) cell by incorporating an attention gate, thereby seamlessly integrating the **attention mechanism** within the cell’s structure.
 
 ---
 
@@ -209,8 +209,3 @@ Regarding recurrent neural networks (RNNs), our study has been limited to conven
 
 ---
 
-## 📚 References
-
-- LeCun, Y., Bottou, L., Bengio, Y., & Haffner, P. (1998). *Gradient-based learning applied to document recognition.*
-- Hochreiter, S., & Schmidhuber, J. (1997). *Long short-term memory.*
-- Cho, K. et al. (2014). *Learning phrase representations using RNN encoder–decoder for statistical machine translation.*
