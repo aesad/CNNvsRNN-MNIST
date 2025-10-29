@@ -46,7 +46,7 @@ device = "cuda" if available else "cpu"
 
 ### **4️⃣ Evaluation Metrics**
 - **Accuracy** and **Loss** on the train and test set  
-- **Training Time** measured for performance comparison  
+- **Training Time** (in **minutes:seconds**, MM:SS) measured for performance comparison
 
 ---
 
@@ -62,9 +62,6 @@ device = "cuda" if available else "cpu"
 | BiLSTM| 0.9870 | 0.0429 | 09:27 |
 | BiGRU | 0.9885 | **0.0369** | 07:46 |
 
-<p align="center">
-  <img src="./Results.png" alt="Results Table" width="550">
-</p>
 
 ---
 
@@ -83,6 +80,87 @@ Example output:
 - Automatically saved as `<model_name>_training_plot.png`
 
 ---
+### 3.1 Visualization of CNN
+
+<p align="center">
+  <img src="./CNN_training_plot.png" alt="CNN Training" width="600">
+</p>
+
+**Observation:**  
+- CNN achieves stable convergence and highest accuracy among all models.  
+- Both training and validation curves closely follow each other, showing minimal overfitting.  
+
+---
+
+### 3.2 Visualization of RNN
+
+<p align="center">
+  <img src="./RNN_training_plot.png" alt="RNN Training" width="600">
+</p>
+
+**Observation:**  
+- Training converges faster but accuracy saturates early.  
+- RNN struggles with spatial dependencies, leading to lower overall performance.  
+
+---
+
+### 3.3 Visualization of LSTM
+
+<p align="center">
+  <img src="./LSTM_training_plot.png" alt="LSTM Training" width="600">
+</p>
+
+**Observation:**  
+- LSTM improves over vanilla RNN with smoother convergence.  
+- Validation accuracy nearly matches CNN performance, showing stronger sequence modeling.  
+
+---
+
+### 3.4 Visualization of GRU
+
+<p align="center">
+  <img src="./GRU_training_plot.png" alt="GRU Training" width="600">
+</p>
+
+**Observation:**  
+- GRU achieves similar accuracy to LSTM with faster training time.  
+- Training is stable, and generalization is slightly better than LSTM.  
+
+---
+
+### 3.5 Visualization of BiRNN
+
+<p align="center">
+  <img src="./BiRNN_training_plot.png" alt="BiRNN Training" width="600">
+</p>
+
+**Observation:**  
+- Bidirectionality slightly improves test accuracy but doubles the computational cost.  
+- Overfitting appears at later epochs.  
+
+---
+
+### 3.6 Visualization of BiLSTM
+
+<p align="center">
+  <img src="./BiLSTM_training_plot.png" alt="BiLSTM Training" width="600">
+</p>
+
+**Observation:**  
+- BiLSTM achieves strong results comparable to GRU and CNN.  
+- Both directions capture complementary sequence information, enhancing recognition accuracy.  
+
+---
+
+### 3.7 Visualization of BiGRU
+
+<p align="center">
+  <img src="./BiGRU_training_plot.png" alt="BiGRU Training" width="600">
+</p>
+
+**Observation:**  
+- BiGRU shows excellent stability and efficiency, ranking second after CNN.  
+- It combines fast training with strong bidirectional context learning.  
 
 ## 💬 4. Discussion
 
