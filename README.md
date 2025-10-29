@@ -83,7 +83,7 @@ Example output:
 ### 3.1 Visualization of CNN
 
 <p align="center">
-  <img src="./training_plot/CNN_training_plot.png" alt="CNN Training" width="1000">
+  <img src="./training_plot/CNN_training_plot.png" alt="CNN Training" width="1200">
 </p>
 
 **Observation:**  
@@ -95,7 +95,7 @@ Example output:
 ### 3.2 Visualization of RNN
 
 <p align="center">
-  <img src="./training_plot/RNN_training_plot.png" alt="RNN Training" width="600">
+  <img src="./training_plot/RNN_training_plot.png" alt="RNN Training" width="1200">
 </p>
 
 **Observation:**  
@@ -107,7 +107,7 @@ Example output:
 ### 3.3 Visualization of LSTM
 
 <p align="center">
-  <img src="./training_plot/LSTM_training_plot.png" alt="LSTM Training" width="600">
+  <img src="./training_plot/LSTM_training_plot.png" alt="LSTM Training" width="1200">
 </p>
 
 **Observation:**  
@@ -119,7 +119,7 @@ Example output:
 ### 3.4 Visualization of GRU
 
 <p align="center">
-  <img src="./training_plot/GRU_training_plot.png" alt="GRU Training" width="600">
+  <img src="./training_plot/GRU_training_plot.png" alt="GRU Training" width="1200">
 </p>
 
 **Observation:**  
@@ -131,7 +131,7 @@ Example output:
 ### 3.5 Visualization of BiRNN
 
 <p align="center">
-  <img src="./training_plot/BiRNN_training_plot.png" alt="BiRNN Training" width="600">
+  <img src="./training_plot/BiRNN_training_plot.png" alt="BiRNN Training" width="1200">
 </p>
 
 **Observation:**  
@@ -143,7 +143,7 @@ Example output:
 ### 3.6 Visualization of BiLSTM
 
 <p align="center">
-  <img src="./training_plot/BiLSTM_training_plot.png" alt="BiLSTM Training" width="600">
+  <img src="./training_plot/BiLSTM_training_plot.png" alt="BiLSTM Training" width="1200">
 </p>
 
 **Observation:**  
@@ -155,7 +155,7 @@ Example output:
 ### 3.7 Visualization of BiGRU
 
 <p align="center">
-  <img src="./training_plot/BiGRU_training_plot.png" alt="BiGRU Training" width="600">
+  <img src="./training_plot/BiGRU_training_plot.png" alt="BiGRU Training" width="1200">
 </p>
 
 **Observation:**  
