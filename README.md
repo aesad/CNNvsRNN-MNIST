@@ -9,7 +9,7 @@ The goal is to analyze how spatial (CNN) and sequential (RNN family) models hand
 
 **Notebook:** [`CNNvsRNN-MNIST.ipynb`](./CNNvsRNN-MNIST.ipynb)
 
-**Dataset:** [MNIST Handwritten Digits]([http://yann.lecun.com/exdb/mnist/](https://www.kaggle.com/datasets/hojjatk/mnist-dataset))
+**Dataset:** [MNIST Handwritten Digits](https://www.kaggle.com/datasets/hojjatk/mnist-dataset)
 
 **Framework:** PyTorch
 
