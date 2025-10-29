@@ -194,11 +194,25 @@ Example output:
 ## 🧩 6. Repository Structure
 
 ```
-├── CNNvsRNN-MNIST.ipynb      # Main notebook
-├── Results.png                # Performance comparison table
-├── saved_models/              # Trained weights
-├── README.md                  # Project documentation
-└── requirements.txt           # Dependencies
+📂 CNN-vs-RNN-MNIST
+├── 📁 models
+│   ├── CNN.py
+│   ├── RNN.py
+│   ├── LSTM.py
+│   └── GRU.py
+│
+├── 📁 training_plot
+│   ├── CNN_training_plot.png
+│   ├── RNN_training_plot.png
+│   ├── LSTM_training_plot.png
+│   ├── GRU_training_plot.png
+│   ├── BiRNN_training_plot.png
+│   ├── BiLSTM_training_plot.png
+│   └── BiGRU_training_plot.png
+│
+├── 📘 CNNvsRNN_MNIST.ipynb
+└── 📄 README.md
+
 ```
 
 ---
