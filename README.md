@@ -45,7 +45,7 @@ device = "cuda" if available else "cpu"
 ```
 
 ### **4️⃣ Evaluation Metrics**
-- **Accuracy** and **Loss** on the test set  
+- **Accuracy** and **Loss** on the train and test set  
 - **Training Time** measured for performance comparison  
 
 ---
