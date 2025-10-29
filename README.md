@@ -87,7 +87,7 @@ Example output:
 </p>
 
 **Observation:**  
-- CNN achieves stable convergence and highest accuracy among all models.  
+- CNN achieves highest accuracy among all models.  
 - Both training and validation curves closely follow each other, showing minimal overfitting.  
 
 ---
@@ -99,9 +99,8 @@ Example output:
 </p>
 
 **Observation:**  
-- Training converges faster but accuracy saturates early.  
-- RNN struggles with spatial dependencies, leading to lower overall performance.  
-
+- Training converges faster but accuracy saturates early.
+  
 ---
 
 ### 3.3 Visualization of LSTM
@@ -111,7 +110,7 @@ Example output:
 </p>
 
 **Observation:**  
-- LSTM improves over vanilla RNN with smoother convergence.  
+- LSTM improves over vanilla RNN.  
 - Validation accuracy nearly matches CNN performance, showing stronger sequence modeling.  
 
 ---
@@ -123,8 +122,7 @@ Example output:
 </p>
 
 **Observation:**  
-- GRU achieves similar accuracy to LSTM with faster training time.  
-- Training is stable, and generalization is slightly better than LSTM.  
+- GRU achieves slightly superior accuracy to the LSTM with a faster training time..  
 
 ---
 
@@ -136,7 +134,6 @@ Example output:
 
 **Observation:**  
 - Bidirectionality slightly improves test accuracy but doubles the computational cost.  
-- Overfitting appears at later epochs.  
 
 ---
 
@@ -148,7 +145,7 @@ Example output:
 
 **Observation:**  
 - BiLSTM achieves strong results comparable to GRU and CNN.  
-- Both directions capture complementary sequence information, enhancing recognition accuracy.  
+- Both directions capture sequence information, enhancing recognition accuracy.  
 
 ---
 
@@ -166,28 +163,23 @@ Example output:
 
 ### **CNN:**
 - Achieved the **highest accuracy (99.27%)** and **lowest loss** among all models.  
-- CNNs are naturally suited for image data due to their ability to learn spatial hierarchies through convolution and pooling layers.  
+- CNNs are best for processing spatial or grid-like data like images, by using filters to identify local patterns.
 - However, training time is relatively longer due to convolutional operations.
 
 ### **RNN and Bidirectional RNN:**
-- Performed **significantly worse** (96.1–96.7%) because vanilla RNNs struggle with long-range dependencies and are not ideal for 2D spatial patterns.
+- Performed **significantly worse** (96.1–96.7%) because vanilla RNNs are designed for sequential data like text or time series, by using internal memory to process data in order and understand temporal dependencies and are not ideal for 2D spatial patterns.
 - Bidirectional RNN improved slightly but at a cost in training time.
 
 ### **LSTM and GRU Families:**
 - **LSTM** and **GRU** achieved strong results (~98.6–98.9%) — better than simple RNNs but below CNN.
 - **BiLSTM** and **BiGRU** further improved performance by processing sequences in both directions.
-- **BiGRU** reached a good balance between accuracy and efficiency, with slightly faster training than BiLSTM.
+- **BiGRU**  reached a good balance between accuracy and speed, with slightly faster training than BiLSTM.
 
 ---
 
-## 🚀 5. Conclusions & Possible Improvements
+## 💡 5. Possible Improvements
 
-| Observation | Suggestion |
-|--------------|-------------|
-| CNN dominates for spatial pattern recognition | Try deeper CNNs (e.g., ResNet, LeNet5+) |
-| RNN-family models show potential but are less efficient | Replace with **ConvLSTM** or **Vision Transformers (ViT)** |
-| Training time varies greatly | Use **mixed precision** and **smaller hidden sizes** to speed up |
-| All models use default hyperparameters | Perform **hyperparameter tuning** (e.g., Optuna, RayTune) |
+Regarding recurrent neural networks (RNNs), our study has been limited to conventional models. However, numerous advanced and contemporary RNN architectures have demonstrated strong performance in text processing tasks. Investigating their effectiveness in image processing is a promising area of study. For instance, the [**Recurrent Attention Unit (RAU)**](./[CNNvsRNN_MNIST.ipynb](https://www.sciencedirect.com/science/article/abs/pii/S0925231222013339)) enhances a Gated Recurrent Unit (GRU) cell by incorporating an attention gate, thereby seamlessly integrating the **attention mechanism** within the cell’s structure.
 
 ---
 
